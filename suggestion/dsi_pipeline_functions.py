@@ -3,7 +3,6 @@ import time
 import shutil
 import os
 import glob
-import networkx as nx
 import numpy as np
 import scipy.io
 import nibabel as nib
