@@ -122,7 +122,7 @@ for subj in os.listdir(project_dir):
 					# Convert result to dir format
 					t = time.time()
 					print('... convert peaks to dir format')
-					dsidir = prepare_dir(dsipeaks, sphere)
+					dsidir = prepare_dir(dsipeaks, sphere, 0, 0, 1)
 					name = os.path.join(main_dir,tp,'CMP','scalars','dsideconv_dir.nii.gz')
 					nib.save(nib.Nifti1Image(dsidir, affine), name)
 					elapsed = time.time() - t
